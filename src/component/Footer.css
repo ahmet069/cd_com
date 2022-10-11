@@ -1,0 +1,16 @@
+.footer {
+    background-color: #20120d;
+    height:90px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.footer div li {
+    font-size:17px;
+    margin: 10px 15px;
+    color:#cccccc;
+}
+

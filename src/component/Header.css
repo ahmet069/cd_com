@@ -1,0 +1,127 @@
+/**************HEADER******************************/
+.logo {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+
+.Mob_nav {
+    display: none;
+
+}
+
+h1 {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    margin: 1px 0px;
+}
+
+.header_area {
+    background-color: #c3002f;
+    height: 90px;
+    /* line-height: 90px; */
+    display: flex;
+    align-items: center;
+
+}
+
+.Nav {
+    width: 100%;
+    margin-left: 10%;
+}
+
+nav li {
+    box-sizing: border-box;
+    vertical-align: center;
+    width: 150px;
+    font-size: 16px;
+    height: 90px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li:hover {
+    transition: 600ms;
+    box-sizing: border-box;
+}
+
+.Nav li:hover a {
+    color: rgb(248, 248, 0);
+    transition: 400ms;
+}
+
+
+
+
+#mob_menu .active {
+    display: block;
+}
+
+@media only screen and (max-width: 1250px) {
+    .Nav li {
+        width: 100px;
+        height: 90px;
+    }
+
+    .Nav {
+        margin-left: 50px;
+    }
+
+    .header_area,
+    .Nav li {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .Nav {
+        display: none;
+    }
+
+    .header_area {
+        height: 80px;
+    }
+
+    .Mob_nav {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .Mob_nav li {
+        display: block;
+        background-color: #c3002f;
+        width: 33.333%;
+        height: 30px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Mob_nav li:hover {
+        background-color: #fff;
+        color: #c3002f;
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    .header_area {
+        display: block;
+    }
+}

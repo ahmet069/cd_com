@@ -1,0 +1,70 @@
+.container2 {
+    width: 50%;
+    margin: 0px 10px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_button {
+    display: block;
+    width: 200%;
+}
+
+.text_button p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 25px;
+
+}
+
+.container2 div img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+.button_menu{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #c3002f;
+    color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 5px #810029;
+    border: dashed 1px #FFF;
+    margin: 15px auto ;
+    width: 40%;
+}
+
+.button_menu:hover{
+    border: dotted 1px #FFF;
+}
+
+
+
+
+@media only screen and (max-width: 1250px) {
+
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .container2 {
+        width: 100%;
+        margin: 20px 10px;
+        display: block;
+    }
+
+    .text_button {
+        width: 100%;
+    }
+
+    .button_menu {
+        padding: 0.25em 0.75em;
+    }
+}
