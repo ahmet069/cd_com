@@ -4,6 +4,7 @@ import Header1 from './component/header';
 import Footer from './component/footer';
 import FoodLine from './component/FoodLine';
 import img1 from "./img/dd2.webp"
+import MenuFood from './component/MenuFood';
 
 
 
@@ -18,11 +19,12 @@ export default class Menu extends React.Component {
         <body id='menu_body'>
           <h1 id="menu_h1">Menümüz</h1>
           <div id="menu_image_container">
-            <img src={img1} alt="asd" />
+            {/* <img src={img1} alt="asd" /> */}
           </div>
           <div style={mystyle.labels} id="menu">
 
-            <div id="menu_inside">
+              <MenuFood/>
+            {/* <div id="menu_inside">
               <FoodLine
                 title="Özel Soslu Döner Dürüm"
                 contents="Tavuk döner , turşu , patates ve özel Çarşı Döner sosu."
@@ -62,8 +64,8 @@ export default class Menu extends React.Component {
               <FoodLine
                 title="Izgara Kasap Köfte"
                 contents="Közlenmiş domates, közlenmiş yeşilbiber, patates kızartması ve pilav."
-              />
-            </div>
+              /> */}
+            {/* </div> */}
           </div>
           <Footer />
         </body>

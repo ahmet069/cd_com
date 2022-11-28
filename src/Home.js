@@ -70,40 +70,40 @@ export default class App extends React.Component {
                 <span class="text">Sipariş Ver</span>
               </div>
             </a>
-
-            <div className="blue_area">
-              <div>
-                <li>
-                  <img src={icon_clear} alt="hijyen" />
-                  <h4>Hijyen</h4>
-                  <p>
-                    Temizlik ve hijyen kurallarına uygun.
-                  </p>
-                </li>
-                <li>
-                  <img src={icon_time} alt="hijyen" />
-                  <h4>Hızlı Teslimat</h4>
-                  <p>
-                    Siparişiniz dakikalar içinde kapınızda.
-                  </p>
-                </li>
-              </div>
-              <div>
-                <li>
-                  <img src={icon_quality} alt="hijyen" />
-                  <h4>Kalite</h4>
-                  <p>
-                    Kaliteli tavuk döner.
-                  </p>
-                </li>
-                <li>
-                  <img src={icon_experience} alt="hijyen" />
-                  <h4>Tecrübe</h4>
-                  <p>
-                    15+ yıl tecrübe
-                  </p>
-                </li>
-
+            <div id='blue_area'>
+              <div className="blue_area">
+                <div>
+                  <li>
+                    <img src={icon_clear} alt="hijyen" />
+                    <h4>Hijyen</h4>
+                    <p>
+                      Temizlik ve hijyen kurallarına uygun.
+                    </p>
+                  </li>
+                  <li>
+                    <img src={icon_time} alt="hijyen" />
+                    <h4>Hızlı Teslimat</h4>
+                    <p>
+                      Siparişiniz dakikalar içinde kapınızda.
+                    </p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src={icon_quality} alt="hijyen" />
+                    <h4>Kalite</h4>
+                    <p>
+                      Kaliteli tavuk döner.
+                    </p>
+                  </li>
+                  <li>
+                    <img src={icon_experience} alt="hijyen" />
+                    <h4>Tecrübe</h4>
+                    <p>
+                      15+ yıl tecrübe
+                    </p>
+                  </li>
+                </div>
               </div>
             </div>
             <div className="foodsContainer">
@@ -155,21 +155,14 @@ export default class App extends React.Component {
               </li>
             </div>
           </div>
-          <Fix_button
-            image={Order_img}
-            link={"https://www.yemeksepeti.com/restaurant/fteg/carsi-doner-fteg"}
-            position='left'
-            marginBottom={10}
-          />
-          <Fix_button2
-            image={require('./img/phone2.webp')}
-            link={"tel: +902164821514"}
-            position='right'
-            marginLeft={10}
-            marginBottom={10}
-            height={100}
-            width={100}
-          />
+          <div id='mobile_bar'>
+            <a href='tel: +902164821514' taget='blank'>
+              <p> Ara </p>
+            </a>
+            <a href='https://www.yemeksepeti.com/restaurant/fteg/carsi-doner-fteg' target='blank'>
+              <p> Sipariş Ver </p>
+            </a>
+          </div>
           <Footer />
         </body>
       );

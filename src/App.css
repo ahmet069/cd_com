@@ -17,7 +17,7 @@
 
 .image1 {
   width: 100%;
-  border-bottom: solid #c3002f 10px;
+  border-bottom: solid #FB2576 10px;
   padding-bottom: -5px;
 }
 
@@ -67,6 +67,17 @@
 
 /*******************Blue area**********************/
 /*********************Blue Area*************************/
+
+#blue_area {
+  background-color: #B4CDE6;
+  width: 152%;
+  margin-left:-26%;
+  box-sizing: border-box;
+  padding:30px 15%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .blue_area {
   margin: 60px auto;
   background-color: #0096fa;
@@ -114,18 +125,23 @@
 }
 
 .order_button {
-  width: 100%;
-  background: #0096fa;
-  color: azure;
-  padding: 10px 0px;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  font-size: 17px;
+  width: 90%;
+  margin-left: 5%;
+  background: #FB2576;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin:20px auto;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .order_button:hover {
-  background: #7dcbff;
+  background: #00730d;
   transition: 600ms;
 }
 
@@ -289,9 +305,36 @@
 #fix_button p {
   color: #eddbb5;
   font-weight: 500;
-
+  animation: glowing-button-85 20s linear infinite;
+  bottom:0,
 }
 
+
+#mobile_bar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 9;
+  bottom: 10px;
+  width: 100%;
+}
+
+
+
+#mobile_bar a {
+  background-color: #FB2576;
+  width:48%;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px;
+}
+
+
+#mobile_bar a:active {
+  background-color: #0096fa;
+}
 @keyframes glowing-button-85 {
   0% {
     background-position: 0 0;
@@ -311,6 +354,12 @@
     width: 90%;
     margin-left: 5%;
   }
+  #fix_button , #fix_button2 {
+    display: none;
+   } 
+   #mobile_bar a {
+    bottom:0px;
+   }
 }
 
 @media only screen and (max-width: 800px) {
@@ -372,5 +421,6 @@
     width: 80%;
     margin-left:10%;
   }
+
 
 }
