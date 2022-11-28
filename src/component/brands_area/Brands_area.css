@@ -1,0 +1,62 @@
+.brands_area {
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brands_area div {
+    width: 45%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 400ms;
+}
+
+.brands_area div:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.05);
+
+}
+
+
+.brands_area div img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.order_button {
+    display: flex;
+    background: #FB2576;
+    text-align: center;
+    height: 55px;
+    margin: 20px auto;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    transition: 600ms;
+}
+
+.order_button:hover {
+    background: #e36600;
+    height:65px;
+    width: 40%;
+}
+
+@media only screen and (max-width:800px) {}
+
+@media only screen and (max-width:1250px) {
+    .brands_area {
+        width: 90%;
+        margin: 10px auto;
+        flex-wrap: wrap;
+    }
+
+    .brands_area div {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

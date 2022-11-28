@@ -1,0 +1,41 @@
+#Contact_container {
+    width: 100%;
+    background-color: #eddbb5;
+}
+
+.icons_area {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    text-align: center;
+}
+
+.icons_area li h4 {
+    font-size: 22px;
+    font-weight: 570;
+    font-family: "Lucida Sans";
+}
+
+.icons_area li {
+    display: block;
+    width: 50%;
+}
+
+.icons_area li p {
+    padding: 10px 0px;
+    display: block;
+    font-size: 18px;
+}
+@media only screen and (max-width:1250px){
+
+}
+
+
+@media only screen and (max-width:800px){
+    .icons_area {
+        display:block;
+    }
+    .icons_area li {
+        width: 100%;
+    }
+}

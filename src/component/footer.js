@@ -9,9 +9,9 @@ function Footer() {
 
     return (
         <body>
-            <footer className="footer">
+            <footer id="footer">
                 <div>
-                    <li> © 2022 Çarşı Döner Tüm Hakları Saklıdır. Designed by Ahmet Subaşı. (08/06/2022) </li>
+                    <li> © 2022 Çarşı Döner Tüm Hakları Saklıdır. <br/>Designed by Ahmet Subaşı.</li>
                 </div>
             </footer>
         </body>

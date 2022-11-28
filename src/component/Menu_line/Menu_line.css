@@ -1,0 +1,92 @@
+/* * {
+    border:solid 1px #000;
+} */
+
+.menuLine {
+    position: relative;
+    width: 48%;
+    display: flex;
+    background-color: #fff;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: solid 2px #e3e3e3;
+    transition: 200ms;
+
+}
+
+.menuLine:hover {
+    background-color: antiquewhite;
+}
+
+.menuLine .article {
+    display: flex;
+    padding: 10px auto;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 65%;
+    margin-left: 10px;
+}
+
+.menuLine img {
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: solid 2px #e3e3e3;
+    background-color: #fff;
+    
+}
+
+.menuLine .menu_name {
+    font-size: 25px;
+    color: #000;
+    display: flex;
+    font-weight: 800;
+}
+
+.menuLine .menu_price {
+    color:#fff;
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+}
+
+.price_box {
+    background-color: #FF6464;
+    position: absolute;
+    right: 5px;
+    bottom:5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .menuLine {width: 96%;border-radius: 10px;}
+}
+
+@media only screen and (max-width: 800px) {
+    .menuLine {
+        width: 97%;
+        border-radius: 10px;
+        margin:3px auto;
+    }
+    .menuLine .article {
+
+    }
+    .menuLine img {
+        border-radius: 10px;
+    }
+    .menuLine .menu_price {
+        font-size: 16px;
+    }
+    .menuLine .article .menu_name , .menu_includes {
+        font-size: 13px;
+    }
+    .price_box {
+        border-radius: 4px;
+        left: 0px;
+        bottom:0px;
+        right:auto;
+    }
+}
